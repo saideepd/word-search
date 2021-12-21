@@ -2,6 +2,7 @@ import { Container } from '@mui/material';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './App.css';
+import Definitions from './components/Definitions/Definitions';
 import Header from './components/Header/Header';
 
 function App() {
@@ -11,15 +12,17 @@ function App() {
   const [category, setCategory] = useState("en");
 
   const dictionaryApi = async() => {
-    try {
-      const data = await axios.get(
-        `https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`
-      );
-      
-      setMeanings(data.data);
+    if(!(word === null || word === '')) {
+      try {
+        const data = await axios.get(
+          `https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`
+        );
+        
+        setMeanings(data.data);
 
-    } catch (error) {
-      console.log(error);
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 
@@ -44,6 +47,14 @@ function App() {
           word={word}
           setWord={setWord} 
         />
+
+        {meanings && (
+          <Definitions 
+            word={word}
+            meanings={meanings}
+            category={category}
+          />
+        )}
 
       </Container>
     </div>
