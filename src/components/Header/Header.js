@@ -12,7 +12,12 @@ const Header = ({ category, setCategory, word, setWord }) => {
             },
             mode: 'dark',
         },
-      });
+    });
+
+    const handleChange = (language) => {
+        setCategory(language);
+        setWord("");
+    }
 
     return (
         <div className="header">
@@ -32,7 +37,7 @@ const Header = ({ category, setCategory, word, setWord }) => {
                         className="select"
                         label="Language"
                         value={category}
-                        onChange={(e) => setCategory(e.target.value)}
+                        onChange={(e) => handleChange(e.target.value)}
                         variant="standard"
                     >
                         {categories.map((option) => (
