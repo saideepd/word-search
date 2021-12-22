@@ -23,6 +23,11 @@
     margin: 10px 0;
 }
 
+audio {
+    width: auto;
+    min-height: 6vh;
+}
+
 @media (max-width: 900px) {
     .meanings {
         height: 60vh;
