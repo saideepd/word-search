@@ -10,15 +10,22 @@ function App() {
   const [word, setWord] = useState("");
   const [meanings, setMeanings] = useState([]);
   const [category, setCategory] = useState("en");
+  const [status, setStatus] = useState("");
 
   const dictionaryApi = async () => {
     if (!(word === null || word === '')) {
       try {
-        const data = await axios.get(
+        await axios.get(
           `https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`
-        );
-
-        setMeanings(data.data);
+        ).then((response) => {
+          setMeanings(response.data);
+          setStatus(response.status);
+        }).catch((error) => {
+          setStatus(error.response.status);
+          while (meanings.length) {
+            meanings.pop();
+          }
+        })
 
       } catch (error) {
         console.log(error);
@@ -53,6 +60,7 @@ function App() {
             word={word}
             meanings={meanings}
             category={category}
+            status={status}
           />
         )}
 
