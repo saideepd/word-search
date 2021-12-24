@@ -36,6 +36,16 @@ audio {
     }
 }
 
+@media (max-width: 500px) {
+    .meanings {
+        margin-top: -5vh;
+    }
+
+    .subTitle {
+        font-size: 8vw;
+    }
+}
+
 ::-webkit-scrollbar-track-piece{
 	background-color:#fff;
 	-webkit-border-radius:0;
