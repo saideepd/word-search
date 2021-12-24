@@ -1,14 +1,18 @@
 import React from 'react'
 import './Definitions.css'
 
-const Definitions = ({ word, meanings, category, status }) => {
+const Definitions = ({ word, meanings, category, status, darkMode }) => {
     return (
         <div className="meanings">
             {
                 meanings[0] && word && status === 200 && (category === 'en' || category === 'en_GB') && (
                     <audio
                         src={meanings[0].phonetics[0] && meanings[0].phonetics[0].audio}
-                        style={{ backgroundColor: "white", borderRadius: 10 }}
+                        style={{
+                            backgroundColor: "#f1f3f4",
+                            borderRadius: 10,
+                            boxShadow: "0px 5px 15px 0px rgb(0 0 0 / 25%)"
+                        }}
                         controls
                     >
                         Your Browser doesn't support audio element.
@@ -23,10 +27,18 @@ const Definitions = ({ word, meanings, category, status }) => {
                                 item.definitions.map((def) => (
                                     <div
                                         className="singleMean"
-                                        style={{ backgroundColor: 'white', color: 'black' }}
+                                        style={{
+                                            backgroundColor: darkMode ? 'white' : '#282c34',
+                                            color: darkMode ? 'black' : 'white',
+                                            boxShadow: "0px 5px 15px 0px rgb(0 0 0 / 25%)"
+                                        }}
                                     >
                                         <b>{def.definition}</b>
-                                        <hr style={{ backgroundColor: "black", width: "100%" }} />
+                                        <hr style={{
+                                            backgroundColor: "black",
+                                            width: "100%"
+                                        }}
+                                        />
 
                                         {def.example && (
                                             <span>
