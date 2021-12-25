@@ -1,3 +1,34 @@
+## Word Search
+A simple and multi-lingual dictionary app created using React and [Free Dictionary API](https://dictionaryapi.dev/).
+You can search for the meanings of any word and the app will present you with different Meanings, Synonyms and Examples for the word in different languages.
+The pronunciation of the words are avialable in the form of Audio for English language (currently supported language).
+
+#### Links to use the To-do app
+- GitHub
+- Netlify
+
+Various other languages in which the meanings available are :
+- English (US)
+- English (UK)
+- Hindi
+- Spanish
+- French
+- Japanese
+- Czech
+- Dutch
+- Slovak
+- Russian
+- German
+- Italian
+- Korean
+- Brazilian Portuguese
+- Arabic
+- Turkish
+
+This dictionary app is an improvised version based on freeCodeCamp's React tutorial - [Code a Dictionary with React and Material UI - Tutorial](https://www.youtube.com/watch?v=ToXna81iij0)
+
+
+---
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
