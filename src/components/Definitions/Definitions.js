@@ -9,9 +9,9 @@ const Definitions = ({ word, meanings, category, status, darkMode }) => {
                     <audio
                         src={meanings[0].phonetics[0] && meanings[0].phonetics[0].audio}
                         style={{
-                            backgroundColor: "#f1f3f4",
-                            borderRadius: 10,
-                            boxShadow: "0px 5px 15px 0px rgb(0 0 0 / 25%)"
+                            borderRadius: 25,
+                            boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 30%)",
+                            transition: "all 0.5s linear"
                         }}
                         controls
                     >
@@ -30,15 +30,18 @@ const Definitions = ({ word, meanings, category, status, darkMode }) => {
                                         style={{
                                             backgroundColor: darkMode ? 'white' : '#282c34',
                                             color: darkMode ? 'black' : 'white',
-                                            boxShadow: "0px 5px 15px 0px rgb(0 0 0 / 25%)"
+                                            boxShadow: "0px 5px 15px 0px rgb(0 0 0 / 25%)",
+                                            transition: "all 0.5s ease-in-out"
                                         }}
                                     >
                                         <b>{def.definition}</b>
-                                        <hr style={{
-                                            backgroundColor: "black",
-                                            width: "100%"
-                                        }}
-                                        />
+                                        {def.example &&
+                                            <hr style={{
+                                                backgroundColor: "black",
+                                                width: "100%"
+                                            }}
+                                            />
+                                        }
 
                                         {def.example && (
                                             <span>
@@ -46,8 +49,8 @@ const Definitions = ({ word, meanings, category, status, darkMode }) => {
                                                 {def.example}
                                             </span>
                                         )}
-                                        <br />
-                                        {def.synonyms && (
+                                        {def.example && def.synonyms.length > 0 && (<br />)}
+                                        {def.synonyms && def.synonyms.length > 0 && (
                                             <span>
                                                 <b>Synonyms : </b>
                                                 {def.synonyms.map((s) => s).join(', ')}

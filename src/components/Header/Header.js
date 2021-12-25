@@ -8,10 +8,10 @@ const Header = ({ category, setCategory, word, setWord, darkMode }) => {
     const darkTheme = createTheme({
         palette: {
             primary: {
-                main: darkMode ? "#fff" : "#000",
+                main: darkMode ? "#fff" : "#000"
             },
-            mode: darkMode ? 'dark' : 'light',
-        },
+            mode: darkMode ? 'dark' : 'light'
+        }
     });
 
     const handleChange = (language) => {

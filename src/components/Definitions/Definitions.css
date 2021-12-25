@@ -26,6 +26,12 @@
 audio {
     width: auto;
     min-height: 6vh;
+    margin-bottom: 0.5vh;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #f5f5f5;
+    border-style: none;
 }
 
 @media (max-width: 900px) {
@@ -44,6 +50,10 @@ audio {
     .subTitle {
         font-size: 8vw;
     }
+
+    audio {
+        min-height: 5vh;
+    }
 }
 
 ::-webkit-scrollbar-track-piece{
@@ -51,10 +61,12 @@ audio {
 	-webkit-border-radius:0;
     border-radius: 0;
 }
+
 ::-webkit-scrollbar{
 	width:8px;
 	height:8px;
 }
+
 ::-webkit-scrollbar-thumb{
 	height:50px;
 	background-color:#999;
@@ -64,6 +76,7 @@ audio {
 	outline-offset:-2px;
 	border: 2px solid #fff;
 }
+
 ::-webkit-scrollbar-thumb:hover{
 	height:50px;
 	background-color:#9f9f9f;
