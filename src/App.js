@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Definitions from './components/Definitions/Definitions';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer'
 import Switch from '@mui/material/Switch';
 
 function App() {
@@ -88,7 +89,7 @@ function App() {
 
   useEffect(() => {
     dictionaryApi();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [word, category]);
 
   return (
@@ -133,6 +134,9 @@ function App() {
           />
         )}
 
+        <Footer
+          darkMode={darkMode}
+        />
       </Container>
     </div>
   );

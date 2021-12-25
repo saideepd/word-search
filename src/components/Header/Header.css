@@ -18,6 +18,7 @@
     .header {
         justify-content: space-evenly;
         height: 25vh;
+        margin-bottom: 4vh;
     }
 
     .title {
