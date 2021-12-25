@@ -4,8 +4,8 @@ You can search for the meanings of any word and the app will present you with di
 The pronunciation of the words are avialable in the form of Audio for English language (currently supported language).
 
 #### Links to use the To-do app
-- (https://saideepd.github.io/word-search/)[https://saideepd.github.io/word-search/]
-- (https://simplewordsearch.netlify.app/)[https://simplewordsearch.netlify.app/]
+- [https://saideepd.github.io/word-search/](https://saideepd.github.io/word-search/)
+- [https://simplewordsearch.netlify.app/](https://simplewordsearch.netlify.app/)
 
 Various other languages in which the meanings available are :
 - English (US)
