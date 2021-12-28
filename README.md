@@ -3,7 +3,7 @@ A simple and multi-lingual dictionary app created using React and [Free Dictiona
 You can search for the meanings of any word and the app will present you with different Meanings, Synonyms and Examples for the word in different languages.
 The pronunciation of the words are available in the form of Audio for English language (currently supported language).
 
-#### Links to use the To-do app
+#### Links to use the Word Search app
 - [https://saideepd.github.io/word-search/](https://saideepd.github.io/word-search/)
 - [https://simplewordsearch.netlify.app/](https://simplewordsearch.netlify.app/)
 
