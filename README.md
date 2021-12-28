@@ -1,7 +1,7 @@
-## Word Search
+# Word Search
 A simple and multi-lingual dictionary app created using React and [Free Dictionary API](https://dictionaryapi.dev/).
 You can search for the meanings of any word and the app will present you with different Meanings, Synonyms and Examples for the word in different languages.
-The pronunciation of the words are avialable in the form of Audio for English language (currently supported language).
+The pronunciation of the words are available in the form of Audio for English language (currently supported language).
 
 #### Links to use the To-do app
 - [https://saideepd.github.io/word-search/](https://saideepd.github.io/word-search/)
@@ -27,6 +27,26 @@ Various other languages in which the meanings available are :
 
 This dictionary app is an improvised version based on freeCodeCamp's React tutorial - [Code a Dictionary with React and Material UI - Tutorial](https://www.youtube.com/watch?v=ToXna81iij0)
 
+---
+### Features & Screenshots: 
+
+- #### Theme switch:
+The app can be used either in Dark Mode or Light Mode as per user's preference:
+![image](https://user-images.githubusercontent.com/30663492/147542892-ef79d96a-c88c-4642-901e-5ead19bb877e.png)
+![image](https://user-images.githubusercontent.com/30663492/147542929-f75d1c96-158c-4497-aae1-5d81e17ea6b6.png)
+
+- #### Multi-lingual
+The app provides meaning of words in various different languages. User can choose a language of choice & search for the meaning of the word in the desired language.
+#### Language Options:
+![image](https://user-images.githubusercontent.com/30663492/147543017-466c9e2d-0f43-46f4-a6aa-7114b9a0f140.png)
+- Hindi:
+![image](https://user-images.githubusercontent.com/30663492/147543093-302c9791-a4b1-4d16-b381-9d4eb0581ec2.png)
+- French:
+![image](https://user-images.githubusercontent.com/30663492/147543252-de048fac-060e-4331-97e7-68dabdc2f56c.png)
+
+- #### Progressive Web App (PWA):
+The web app can also be installed on mobile phones & desktops as standalone applications by clicking the prompt to install as app when the app loads in browser.
+![image](https://user-images.githubusercontent.com/30663492/147543331-590c7166-e2fe-4da0-b86b-fbf7dc85a2e8.png)  
 
 ---
 # Getting Started with Create React App
