@@ -35,7 +35,7 @@ const Definitions = ({ word, meanings, category, status, darkMode }) => {
                                         }}
                                     >
                                         <b>{def.definition}</b>
-                                        {def.example &&
+                                        {(def.example || def.synonyms.length > 0) &&
                                             <hr style={{
                                                 backgroundColor: "black",
                                                 width: "100%"

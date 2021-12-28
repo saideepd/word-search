@@ -4,7 +4,7 @@
   "description": "Word Search - A multi-lingual Dictionary app",
   "start_url": "/",
   "scope": "/",
-  "display": "fullscreen",
+  "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "categories": "books,education,productivity,utilities",
