@@ -15,11 +15,11 @@ const Footer = (darkMode) => {
 
     return (
         <ThemeProvider theme={darkTheme}>
-            <div class="footer-container" >
-                <div class="creator">Made by
+            <div className="footer-container" >
+                <div className="creator">Made by
                     <a href="https://github.com/saideepd/" target="_blank" rel="noreferrer" title="Saideep's GitHub"> Saideep Dicholkar</a>
                 </div>
-                <div class="icon-attribution">Icons made by <a href="https://www.freepik.com" target="_blank" rel="noreferrer" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank" rel="noreferrer" title="Flaticon">www.flaticon.com</a>
+                <div className="icon-attribution">Icons made by <a href="https://www.freepik.com" target="_blank" rel="noreferrer" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank" rel="noreferrer" title="Flaticon">www.flaticon.com</a>
                 </div>
             </div>
         </ThemeProvider>

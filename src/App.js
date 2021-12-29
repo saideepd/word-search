@@ -88,7 +88,9 @@ function App() {
   // console.log(meanings);
 
   useEffect(() => {
-    dictionaryApi();
+    if (!(word === "" || word === '' || word === null)) {
+      dictionaryApi();
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [word, category]);
 
