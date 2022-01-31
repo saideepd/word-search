@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.css';
 import { createTheme, MenuItem, TextField, ThemeProvider } from '@mui/material';
 import categories from '../../data/category';
+import { debounce } from 'lodash';
 
 const Header = ({ category, setCategory, word, setWord, darkMode }) => {
 
@@ -19,6 +20,10 @@ const Header = ({ category, setCategory, word, setWord, darkMode }) => {
         setWord("");
     }
 
+    const handleText = debounce((text) => {
+        setWord(text);
+    }, 500);
+
     return (
         <div className="header">
             <span className="title">{word ? word : "Word Search"}</span>
@@ -28,8 +33,7 @@ const Header = ({ category, setCategory, word, setWord, darkMode }) => {
                         className="search"
                         label="Search a Word"
                         variant="standard"
-                        value={word}
-                        onChange={(e) => setWord(e.target.value)}
+                        onChange={(e) => handleText(e.target.value)}
                     />
 
                     <TextField
