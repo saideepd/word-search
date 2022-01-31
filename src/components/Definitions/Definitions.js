@@ -26,6 +26,7 @@ const Definitions = ({ word, meanings, category, status, darkMode }) => {
                             mean.meanings.map((item) =>
                                 item.definitions.map((def) => (
                                     <div
+                                        key={def.definition}
                                         className="singleMean"
                                         style={{
                                             backgroundColor: darkMode ? 'white' : '#282c34',
