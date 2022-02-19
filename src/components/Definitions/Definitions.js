@@ -20,7 +20,8 @@ const Definitions = ({ word, meanings, category, status, darkMode }) => {
                 )
             }
             {word === "" ? (<span className="subTitle">Start by typing a word in Search</span>)
-                : word !== "" && status === 404 ? (<span className="subTitle">Sorry pal, no definitions found.<br />Start by typing another word in Search</span>)
+            : word !== "" && status === 404 && !(category === "en" || category === "en_GB") ? (<span className="nonEnglishSubTitle">Sorry pal, unfortunately the language is no longer supported.<br />Currently only English language is supported.</span>)
+                : word !== "" && status === 404 && (category === 'en' || category === 'en_GB') ? (<span className="subTitle">Sorry pal, no definitions found.<br />Start by typing another word in Search</span>)
                     : (
                         meanings.map((mean) =>
                             mean.meanings.map((item) =>
@@ -36,7 +37,8 @@ const Definitions = ({ word, meanings, category, status, darkMode }) => {
                                         }}
                                     >
                                         <b>{def.definition}</b>
-                                        {(def.example || def.synonyms.length > 0) &&
+                                        {/* The API was updated & support for synonyms, antonyms was dropped. So, I had to add check to display synonyms only if the property exists. */}
+                                        {(def.example || (def.synonyms && def.synonyms.length > 0)) &&
                                             <hr style={{
                                                 backgroundColor: "black",
                                                 width: "100%"
@@ -50,7 +52,8 @@ const Definitions = ({ word, meanings, category, status, darkMode }) => {
                                                 {def.example}
                                             </span>
                                         )}
-                                        {def.example && def.synonyms.length > 0 && (<br />)}
+                                        {/* The API was updated & support for synonyms, antonyms was dropped. So, I had to add check to display synonyms only if the property exists. */}
+                                        {def.example && (def.synonmys && def.synonmys.length > 0) && (<br />)}
                                         {def.synonyms && def.synonyms.length > 0 && (
                                             <span>
                                                 <b>Synonyms : </b>
