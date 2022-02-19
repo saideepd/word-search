@@ -1,6 +1,6 @@
 # Word Search
-A simple and multi-lingual dictionary app created using React and [Free Dictionary API](https://dictionaryapi.dev/).
-You can search for the meanings of any word and the app will present you with different Meanings, Synonyms and Examples for the word in different languages.
+A simple ~~and multi-lingual~~ dictionary app created using React and [Free Dictionary API](https://dictionaryapi.dev/).
+You can search for the meanings of any word and the app will present you with different Meanings, ~~Synonyms~~ and Examples for the word. ~~in different languages.~~
 The pronunciation of the words are available in the form of Audio for English language (currently supported language).
 
 #### Links to use the Word Search app
@@ -10,6 +10,11 @@ The pronunciation of the words are available in the form of Audio for English la
 Various other languages in which the meanings available are :
 - English (US)
 - English (UK)
+
+<details>
+<summary>Deprecated languages</summary>
+<p>The below languages used to be supported by the underlying API used. But unfortunately, the API dropped support for Non-English languages.</p>
+
 - Hindi
 - Spanish
 - French
@@ -24,6 +29,7 @@ Various other languages in which the meanings available are :
 - Brazilian Portuguese
 - Arabic
 - Turkish
+</details>
 
 This dictionary app is an improvised version based on freeCodeCamp's React tutorial - [Code a Dictionary with React and Material UI - Tutorial](https://www.youtube.com/watch?v=ToXna81iij0)
 
@@ -35,6 +41,11 @@ The app can be used either in Dark Mode or Light Mode as per user's preference:
 ![image](https://user-images.githubusercontent.com/30663492/147542892-ef79d96a-c88c-4642-901e-5ead19bb877e.png)
 ![image](https://user-images.githubusercontent.com/30663492/147542929-f75d1c96-158c-4497-aae1-5d81e17ea6b6.png)
 
+
+<details>
+<summary>Deprecated Multi-Lingual app screenshots</summary>
+<p>The below languages used to be supported by the underlying API used. But unfortunately, the API dropped support for Non-English languages.</p>
+
 - #### Multi-lingual
 The app provides meaning of words in various different languages. User can choose a language of choice & search for the meaning of the word in the desired language.
 #### Language Options:
@@ -43,6 +54,8 @@ The app provides meaning of words in various different languages. User can choos
 ![image](https://user-images.githubusercontent.com/30663492/147543093-302c9791-a4b1-4d16-b381-9d4eb0581ec2.png)
 - French:
 ![image](https://user-images.githubusercontent.com/30663492/147543252-de048fac-060e-4331-97e7-68dabdc2f56c.png)
+</details>
+<br/>
 
 - #### Progressive Web App (PWA):
 The web app can also be installed on mobile phones & desktops as standalone applications by clicking the prompt to install as app when the app loads in browser.
